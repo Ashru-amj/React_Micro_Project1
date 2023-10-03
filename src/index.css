@@ -1,0 +1,184 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("./images/backgroundimg.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-card {
+  background: url("./images/bg-card-front.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 10px;
+  height: 200px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.back-card {
+  background: url("./images/bg-card-back.png") no-repeat center/cover;
+  border-radius: 10px;
+  margin: 20px;
+  height: 200px;
+  width: 400px;
+  margin-left: 10rem;
+  padding: 10px;
+  margin-top: 4rem;
+}
+
+.total_card {
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.payment-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group input[type="month"],
+.input-group input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  width: 20%;
+  padding: 0.6rem;
+}
+
+.input-group input[type="year"],
+.input-group input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  width: 20%;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 85%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: hsl(210, 56%, 4%);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  margin-top: 2rem;
+  font-size: 22px;
+  margin-left: 1rem;
+  gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cvc {
+  width: 62%;
+  /* font-size: 18px; */
+}
+
+p {
+  margin-top: 5.3rem;
+  margin-right: 3rem;
+  font-size: 22px;
+  float: right;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    gap: 2rem;
+  }
+
+  .total_card {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .font-card,
+  .back-card {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:450px) {
+  .font-card,
+  .back-card{
+    width: 100%;
+  } 
+}
+
+.small-text {
+  font-size: 12px; /* Adjust the font size as needed */
+  color: red; /* Error text color */
+}
